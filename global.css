@@ -1,0 +1,22 @@
+*::after, 
+*::before, 
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+a, 
+a:link,
+a:visited,
+a:hover,
+a:active{
+    color: white;
+    text-decoration: none;
+}
