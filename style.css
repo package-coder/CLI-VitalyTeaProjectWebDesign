@@ -1,6 +1,7 @@
 :root{
     --color-primary: #0965A1;
-    --color-light-primary: tomato;
+    --color-light-primary: #84b2d0;
+    --color-dark-primary: #053351;
     --height-navbar: 7vh;
     --color-bg: #fff;
 }
@@ -20,30 +21,26 @@ body{
     border-width: 0 0 1px 0;
     border-color: lightgray;
     border-style: solid;
-    padding: 0.3rem 0;
 }
 
 .hnav .list{
     display: flex;
-    justify-conte  lnt: space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
 .hnav .list .text{
     color: black;
+    display: inline-block;
+    padding: 1rem;
 }
 
 .hnav .list .list-item .list{
     display: flex;
 }
 
-.hnav .list .list-item .list li,
-.sublist li{
-    padding: 1rem;
-}
-
-.hnav .list .list-item .list li:hover .text{
-    color: tomato;   
+.hnav .list .list-item .list li:hover{
+    background: var(--color-light-primary);
     cursor: pointer;
 }
 
@@ -99,6 +96,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     padding: 1rem;
+    height: auto;
 }
 
 .container__services .header,
@@ -118,6 +116,92 @@ body{
     color: var(--color-primary);
     font-weight: bold;
 }
+
+.container__services .tiles{
+    margin: 2rem;
+}
+
+.container__services .tiles .list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__services .tiles .list .list-item .tile{
+    height: 75vh;
+    margin: 1rem;
+    background: url(motion-secrets.gif);
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;    
+    padding: 0;
+}
+
+.container__services .tiles .list .list-item .tile{
+    cursor: pointer;
+}
+
+.container__services .tiles .list .list-item .tile:hover .group,
+.container__services .tiles .list .list-item .tile:active .group{
+    background: rgba(1, 1, 1, 50%);
+}
+
+/*
+    set the background using background property as url()
+    startng here
+*/
+.container__services .tiles .list .list-item .tile1{
+    
+}
+
+.container__services .tiles .list .list-item .tile2{
+
+}
+
+.container__services .tiles .list .list-item .tile3{
+
+}
+
+/*
+    ends here
+*/
+
+.container__services .tiles .list .list-item .tile .group{
+    padding: 1.5rem 2rem;
+    background: rgba(1, 1, 1, 10%);
+    color: white;
+}
+
+
+.container__exp{
+    height: auto;
+}
+
+.container__exp .list > *{
+    height: 90vh;
+    width: 100vw;
+}
+
+
+
+.container__exp .list .list-item1{
+    background-color: darkgray;
+}
+
+.container__exp .list .list-item2{
+    background-color: lightslategray;
+}
+
+.container__exp .list .list-item3{
+    background-color: lightgrey;
+}
+
+
+
+
+
 
 
 
