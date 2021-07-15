@@ -295,7 +295,7 @@ body{
 }
 
 .container__growth .list .list-item .tile .img{
-    background: url(/img/paint1.webp);
+    background: lightgray;
     background-position: center;  
     height: 50vh;
 } 
