@@ -298,8 +298,13 @@ body{
         background-position: center;
     }
 
+    .container__offers .tiles .list{
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
     .container__offers .tiles .list .list-item .tile{
-        width: 50vw;   
+        width: 100%;   
     }
 }
 
