@@ -9,14 +9,18 @@
     <meta property="og:description" content="No description.." />
     <meta property="og:url"content= "https://package-coder.github.io/VitalyTeaProjectWebDesign.github.io" />
     <meta property="og:title" content="Vitaly Tea - Web Design" />
-        
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="global.css">
-    <link rel="stylesheet" href="style.css">
-    
+
     <title>Vitaly Tea - Web Design</title>
     <link rel="icon" href="bg2.svg">
     <link rel="apple-touch-icon" href="bg2.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -24,35 +28,36 @@
         <nav class="hnav" >
             <ul class="list">
                 <li class="list-item list-item-1">
-                    <ul class="list">
-                        <li><a class="text" href="#">LOGO</a></li>
-                    </ul>
+                    <header class="header">
+                        <img src="bg2.svg" alt="" class="img">
+                        <a class="text text-style" href="#">Vitaly Tea</a>
+                    </header>
                 </li>
                 <li class="list-item list-item-2">
                     <ul class="list">
                         <li>
-                            <a class="text" href="">Home</a>
+                            <a class="text text-style" href="">Home</a>
                         </li>
                         <li>
-                            <a class="text" >Services</a>
+                            <a class="text text-style" >Services</a>
                             <ul class="list-item sublist">
-                                <li><a class="text" href="#" target="_blank">Digital Printing</a></li>
-                                <li><a class="text" href="#" target="_blank">Binding</a></li>
-                                <li><a class="text" href="#" target="_blank">Laminating</a></li>
-                                <li><a class="text" href="#" target="_blank">Cutting</a></li>
+                                <li><a class="text text-style" href="#" target="_blank">Digital Printing</a></li>
+                                <li><a class="text text-style" href="#" target="_blank">Binding</a></li>
+                                <li><a class="text text-style" href="#" target="_blank">Laminating</a></li>
+                                <li><a class="text text-style" href="#" target="_blank">Cutting</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a class="text" href="">Menu</a>
+                            <a class="text text-style" href="">Menu</a>
                         </li>
                         <li>
-                            <a class="text" href="">Order</a>
+                            <a class="text text-style" href="">Order</a>
                         </li>
                         <li>
-                            <a class="text" href="">About</a>
+                            <a class="text text-style" href="">About</a>
                         </li>
                         <li>
-                            <a class="text" href="">Contacts</a>
+                            <a class="text text-style" href="">Contacts</a>
                         </li>
                     </ul>
                 </li>
@@ -63,18 +68,20 @@
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="container containter__home">
             <img  class="video" autoplay loop src="bg2.svg"></img>
             <section class="tile">
-                <h1 class="title">Vitaly Tea</h1>
-                <article class="article">"Our products and services offer a lot more that you could think of."</article>    
+                <h1 class="title h1-title-style">Vitaly Tea</h1>
+                <article class="article text-style">"Our products and services offer a lot more that you could think of."</article>    
+                <article class="learn-more-anchor">Learn More</article>    
             </section>
         </section>
         
         <section class="container container__services">
             <header class="header">
-                <h2 class="text">What we offer: </h2>
+                <h2 class="text h2-title-style">What we offer: </h2>
                 <ul class="list">
                     <li class="list-item">
                         <a class="text" href="#" target="_blank">Digital Printing</a>
@@ -96,16 +103,18 @@
                     <li class="list-item">
                         <a class="tile tile1">
                             <div class="group">
-                                <h3 class="title">Lorem, ipsum dolor. 1</h3>
+                                <h2 class="title">Creativity is every where.</h2>
                                 <article class="article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, velit?</article>
+                                <article class="learn-more learn-more-anchor">Learn More</article>
                             </div>
                         </a>
                     </li>
                     <li class="list-item">
                         <a class="tile tile2">
                             <div class="group">
-                                <h3 class="title">Lorem, ipsum dolor. 2</h3>
+                                <h2 class="title">Your design. We create.</h2>
                                 <article class="article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, velit?</article>
+                                <article class="learn-more learn-more-anchor">Learn More</article>
                             </div>
                         </a>
                     </li>
@@ -113,8 +122,9 @@
                     <li class="list-item">
                         <a class="tile tile3">
                             <div class="group">
-                                <h3 class="title">Lorem, ipsum dolor. 3</h3>
+                                <h2 class="title">Capture more.</h2>
                                 <article class="article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, velit?</article>
+                                <article class="learn-more learn-more-anchor">Learn More</article>
                             </div>
                         </a>
                     </li>
@@ -124,9 +134,9 @@
 
         <section class="container container__exp">
             <section class="tile">
-                <h3 class="title">TODO1</h3>
-                <article>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, dolorem?
+                <h2 class="text title">Lorem ipsum dolor sit amet.</h2>
+                <article class="text">
+                    <span class="quotes">"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis omnis incidunt saepe quas eveniet numquam id, culpa explicabo vitae! Enim expedita at vitae architecto dolore. Quod voluptates at neque pariatur?<span class="quotes">"</span>
                 </article>
             </section>
         </section>
@@ -195,6 +205,7 @@
         <section class="container container__growth">
             <header class="header">
                 <h2 class="text align-text">Services to Keep Growing</h2>
+                <article class="article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam, dolorem?</article>
             </header>
 
             <ul class="list">
@@ -206,7 +217,8 @@
                             <i>icon</i>
                             <h3 class="title">Lorem, ipsum dolor. 1</h3>
                             <article class="article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, velit?</article>
-                            <article>Learn More --></article>
+                            <article class="learn-more-anchor">Learn More</article>
+
                         </section>
                     </section>
                 </li>
@@ -218,7 +230,7 @@
                             <i>icon</i>
                             <h3 class="title">Lorem, ipsum dolor. 1</h3>
                             <article class="article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, velit?</article>
-                            <article>Learn More --></article>
+                            <article class="learn-more-anchor">Learn More</article>
                         </section>
                     </section>
                 </li>
@@ -229,7 +241,7 @@
                             <i>icon</i>
                             <h3 class="title">Lorem, ipsum dolor. 1</h3>
                             <article class="article">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, velit?</article>
-                            <article>Learn More --></article>
+                            <article class="learn-more-anchor">Learn More</article>
                         </section>
                     </section>
                 </li>
@@ -326,7 +338,7 @@
             </ul>
 
             <footer class="footer">
-                <a href="#" class="text">See all reviews</a>
+                <article class="learn-more-anchor">See all reviews</article>
             </footer>
         </section>
     
@@ -337,14 +349,14 @@
             <ul class="list">
                 <li class="list-item list-item1 collapsible collapsible--expanded">
                     <header class="collapsible__header">
-                        <article class="text collapsible__heading">CONTACT US</article>
+                        <article class="text collapsible__heading">SERVICES</article>
                     </header>
                     
                     <ul class="list collapsible__content">
                         <li class="list-item list-item-1 subtext">Digital Printing</li>
-                        <li class="list-item list-item-2 subtext">Digital Printing</li>
-                        <li class="list-item list-item-3 subtext">Digital Printing</li>
-                        <li class="list-item list-item-4 subtext">Digital Printing</li>
+                        <li class="list-item list-item-1 subtext">Binding</li>
+                        <li class="list-item list-item-3 subtext">Laminating</li>
+                        <li class="list-item list-item-4 subtext">Cutting</li>
                     </ul>
                 </li>
                 <li class="list-item list-item1 collapsible">
@@ -353,44 +365,41 @@
                     </header>
 
                     <ul class="list collapsible__content">
-                        <li class="list-item list-item-1 subtext">Digital Printing</li>
-                        <li class="list-item list-item-2 subtext">Digital Printing</li>
-                        <li class="list-item list-item-3 subtext">Digital Printing</li>
-                        <li class="list-item list-item-4 subtext">Digital Printing</li>
+                        <li class="list-item list-item-1 subtext">09123456789</li>
+                        <li class="list-item list-item-1 subtext">facebook.com/vitalytea</li>
+                        <li class="list-item list-item-3 subtext">vitalytea@gmail.com</li>
+                        <li class="list-item list-item-4 subtext">@sample location@</li>
                     </ul>
                 </li>
                 <li class="list-item list-item1 collapsible">
                     <header class="collapsible__header">
-                        <article class="text collapsible__heading">CONTACT US</article>
+                        <article class="text collapsible__heading">CREDITS (TO OWNER) FOR RESOURCES</article>
                     </header>
 
                     <ul class="list collapsible__content">
-                        <li class="list-item list-item-1 subtext">Digital Printing</li>
-                        <li class="list-item list-item-2 subtext">Digital Printing</li>
-                        <li class="list-item list-item-3 subtext">Digital Printing</li>
-                        <li class="list-item list-item-4 subtext">Digital Printing</li>
-                    </ul>
-                </li>
-                <li class="list-item list-item1 collapsible">
-                    <header class="collapsible__header">
-                        <article class="text collapsible__heading">CONTACT US</article>
-                    </header>
-
-                    <ul class="list collapsible__content">
-                        <li class="list-item list-item-1 subtext">Digital Printing</li>
-                        <li class="list-item list-item-2 subtext">Digital Printing</li>
-                        <li class="list-item list-item-3 subtext">Digital Printing</li>
-                        <li class="list-item list-item-4 subtext">Digital Printing</li>
+                        <li class="list-item list-item-1 subtext">
+                            <a href="https://www.pexels.com/" target="_blank">www.pexels.com</a>
+                        </li>
+                        <li class="list-item list-item-1 subtext">
+                            <a href="https://www.adobe.com/" target="_blank">www.adobe.com</a>
+                        </li>
+                        <li class="list-item list-item-3 subtext">
+                            <a href= "https://www.fonts.google.com/" target="_blank">www.fonts.google.com</a>
+                        </li>
+                        <li class="list-item list-item-4 subtext">
+                            <a href="#" target="_blank">Full credits...</a>
+                        </li>
                     </ul>
                 </li>
                 
             </ul> 
             <section class="group">
                 <header class="header">
-                    <img src="motion-secrets.webp" alt="" class="img">
+                    <img src="bg2.svg" alt="" class="img">
                     <h2 class="text title">Vitaly Tea</h2>
                 </header>
-                <article class="text subtitle">Copyright 2021 @Owner</article>
+                <article class="text subtitle">@Copyright 2021</article>
+                <article class="highlight">Educational Purposes Only</article>
             </section>
         </nav>
     </footer>
