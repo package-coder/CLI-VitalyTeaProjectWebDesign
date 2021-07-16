@@ -306,9 +306,10 @@ body{
     direction: ltr;
 }
 
+
+
 .container__reviews{
     height: auto;
-    border: 1px solid lightgray;
     padding: 2rem;
     flex-direction: column;
     background: #202020;
@@ -338,12 +339,13 @@ body{
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .container__reviews .list .list-item .header .img{
     max-height: 2.8rem;
     max-width: 2.8rem;
-    display: inline-block;
     border-radius: 50%;
     border: 5px solid var(--color-light-primary);
     object-fit: cover;
@@ -353,6 +355,10 @@ body{
 
 .container__reviews .list .list-item .header .group .subtitle{
     color: gray;
+}
+
+.container__reviews .list .list-item .header .group .subtitle::before{
+    content: "@";
 }
 
 .container__reviews .list .list-item .tile{
@@ -373,7 +379,123 @@ body{
 }
 
 
+.fnav{
+    height: auto;
+    padding: 2rem;
+    background: var(--color-dark-primary);
+    align-items: center;
+    justify-content: center;
+}
+
+.fnav .group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fnav .list{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.fnav .text{
+    font-weight: bold;
+}
+
+.fnav .subtext:hover,
+.fnav .text{
+    color: white;
+}
+
+.fnav .subtext:hover{
+    cursor: pointer;
+}
+
+
+.fnav .subtext{
+    color: gray;
+}
+
+.fnav > .list > *{
+    margin: 2rem;
+}
+
+
+.fnav .list .list-item > *{
+    margin-bottom: 0.8rem;
+}
+
+
+.fnav > .list .list-item > .list{
+    flex-direction: column;
+}
+
+.fnav .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.fnav .header .img{
+    max-height: 2.5rem;
+    min-height: 2.5rem;
+    
+    max-width: 2.5rem;
+    min-width: 2.5rem;
+    
+    height: 2.5rem;
+    width: 2.5rem;
+
+    margin-right: 8px;
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 800px) {
+    
+    /* Collapsibles */
+    .collapsible__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .collapsible__heading {
+        margin-top: 0;
+        font-size: 3rem;
+    }
+
+    .collapsible__chevron {
+        transform: rotate(-90deg);
+        transition: transform 0.3s;
+    }
+
+    .collapsible__content {
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+
+    .collapsible--expanded .collapsible__chevron {
+        transform: rotate(0);
+    }
+
+    .collapsible--expanded .collapsible__content {
+        max-height: 100vh;
+        opacity: 1;
+    }
+
 
     .hnav .list{
         align-items: space-between;
@@ -471,12 +593,39 @@ body{
     .container__reviews .list{
         grid-template-columns: 1fr 1fr;
     }
+
+    .fnav{
+        padding: 2rem;
+        margin-top: 0;  
+    }
+
+    .fnav .text{
+        font-size: 1.3rem;
+    }
+
+    .fnav .group{
+        margin-bottom: 1rem;
+    }
+
+    .fnav .list{
+        flex-direction: column;
+        width: inherit;
+        margin-bottom: 2rem;
+        display: block;
+    }
+
+    .fnav > .list > .list-item{
+        padding: 0.5rem 2rem;
+        margin: 0.5rem;
+        border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    }
 }
 
 @media screen and (max-width: 600px) {
     .container__reviews .list{
         grid-template-columns: 1fr;
     }
+
 }
 
 .increase-font{
@@ -486,3 +635,8 @@ body{
 .decrease-opacity{
     opacity: 70%;
 }
+
+.align-text{
+    text-align: center;
+}
+
