@@ -472,6 +472,7 @@ body{
     
     .collapsible__heading {
         margin-top: 0;
+        margin-bottom: 0;
         font-size: 3rem;
     }
 
@@ -618,6 +619,10 @@ body{
         padding: 0.5rem 2rem;
         margin: 0.5rem;
         border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+    }
+    
+    .fnav .list .list-item > *{
+        margin: 0.5rem;
     }
 }
 
