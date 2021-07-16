@@ -18,9 +18,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/5516339156.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="global.css">
     <link rel="stylesheet" href="style.css">
+
+    
 
 </head>
 <body>
@@ -33,13 +37,23 @@
                         <a class="text text-style" href="#">Vitaly Tea</a>
                     </header>
                 </li>
-                <li class="list-item list-item-2">
-                    <ul class="list">
+
+                <li class="list-item list-item-2 collapsible collapsible--expanded">
+                    <header class="icon collapsible__header">
+                        <i class="fas fa-align-justify collapsible__heading"></i>
+                    </header>
+                    
+                    <ul class="list collapsible__content">
                         <li>
                             <a class="text text-style" href="">Home</a>
                         </li>
-                        <li>
-                            <a class="text text-style" >Services</a>
+                        <li class="list-item-2">
+                            <a class="text text-style" >
+                                Services
+                                <span class="icon">
+                                    <i class="fas fa-chevron-down"></i>
+                                </span>
+                            </a>
                             <ul class="list-item sublist">
                                 <li><a class="text text-style" href="#" target="_blank">Digital Printing</a></li>
                                 <li><a class="text text-style" href="#" target="_blank">Binding</a></li>
@@ -60,9 +74,6 @@
                             <a class="text text-style" href="">Contacts</a>
                         </li>
                     </ul>
-                </li>
-                <li class="list-item wrapped-item">
-                    <div class="text icon">icon</div>
                 </li>
 
             </ul>
