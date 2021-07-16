@@ -1,0 +1,14 @@
+.box{
+    padding: 1rem;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.box__heading{
+    font-weight: bold;
+}
+
+.box_content{
+    color: gray;
+}
+

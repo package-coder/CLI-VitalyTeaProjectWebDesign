@@ -4,3 +4,18 @@ collapsibles.forEach((item) =>
     this.classList.toggle("collapsible--expanded");
   })
 );
+
+
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("scroll-sticky-id");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("scroll-sticky");
+  } else {
+    header.classList.remove("scroll-sticky");
+  }
+}
