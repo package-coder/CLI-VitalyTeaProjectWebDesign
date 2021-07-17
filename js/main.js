@@ -1,10 +1,15 @@
+
+
 const collapsibles = document.querySelectorAll(".collapsible");
-collapsibles.forEach((item) =>
+collapsibles.forEach((item) => {
   item.addEventListener("click", function () {
     this.classList.toggle("collapsible--expanded");
   })
+  item.addEventListener("focusout", function () {
+    this.classList.toggle("collapsible--expanded");
+  })
+}
 );
-
 
 
 window.onscroll = function() {myFunction()};

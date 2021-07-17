@@ -152,6 +152,10 @@
 }
 
 
+.cursor-pointer{
+    cursor: zoom-out;
+}
+
 /*
 Collapsibles
 */
