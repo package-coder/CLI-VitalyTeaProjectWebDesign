@@ -134,16 +134,15 @@
 */
 
 .container__services .tiles .list .list-item .tile1{
-    background: url(../img/collage.webp);    
+    background: url(../img/collage.webp) lightgray;    
 }
 
 .container__services .tiles .list .list-item .tile2{
-    background: url(../img/hair.webp);
-
+    background: url(../img/hair.webp) lightgray;
 }
 
 .container__services .tiles .list .list-item .tile3{
-    background: url(../img/picture.webp);
+    background: url(../img/picture.webp) lightgray;
 
 }
 
