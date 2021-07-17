@@ -29,6 +29,10 @@
     padding: 1.5rem 1rem;
 }
 
+.container--shrink{
+    padding: 1rem 2re;
+}
+
 .container--max-width{
     width: 100vw;
 }
@@ -174,6 +178,7 @@ Collapsibles
     max-height: 0;
     overflow: hidden;
     opacity: 0;
+    transition: all 0.3s;
 }
 
 .collapsible--expanded .collapsible__chevron {
@@ -204,9 +209,18 @@ Scroll-sticky
     width: 100vw;
 }
 
+
 .normalize-icon{
     font: 1.15rem;
     color: var(--color-white);
+}
+
+.normalize-icon--shrink{
+    font: 0.8rem
+}
+
+.normalize-icon--black{
+    color: var(--color-black);
 }
 
 /**
@@ -486,6 +500,9 @@ Scroll-sticky
     .h_collapsible__heading {
         margin-top: 0;
         margin-bottom: 0;
+    }
+
+    .h_collapsible__heading--1x{
         font-size: 3rem;
     }
 
@@ -502,9 +519,9 @@ Scroll-sticky
 
 
     .hnav > .list{
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 0 2rem;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 1rem 2rem;
         width: 100vw;
         flex-wrap: wrap;
     }
@@ -526,16 +543,37 @@ Scroll-sticky
     }
 
 
-    .hnav > .list > .list-item-2 > .list > li > a{
-   
-    }
-
     .hnav > .list > .list-item-2{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-end;
+        align-items: flex-start;
     }
+
+    .hnav > .list > .list-item-2 > .list{
+        display: flex;
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        margin-top: 1.5rem;
+        background-color: white;
+        border: 1px solid lightgrey;
+        z-index: 1;
+    }
+
+    .hnav > .list > .list-item-2 > .list > li{
+
+        border-bottom: 1px solid lightgrey;
+    }
+
+    .hnav > .list > .list-item-2 .text{
+        padding: 1rem 0;
+        width: 30vw;
+        align-items: flex-end;
+        text-align: right;
+        margin: 0 2rem 0 3rem;
+    }
+
 
     .hnav > .list > .list-item-2 > .list{
         flex-direction: column;
