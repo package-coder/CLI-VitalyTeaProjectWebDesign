@@ -507,14 +507,15 @@ Scroll-sticky
     }
 
     .h_collapsible__content {
-        max-height: 100vh;
-        opacity: 1;
-    }
-
-    .collapsible--expanded .h_collapsible__content {
         max-height: 0;
         overflow: hidden;
         opacity: 0;
+        transition: all 0.3s;
+    }
+
+    .collapsible--expanded .h_collapsible__content {
+        max-height: 100vh;
+        opacity: 1;
     }
 
 
